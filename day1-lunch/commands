@@ -1,0 +1,5 @@
+cd /Users/cmdb/data/genomes
+wc -l BDGP6.Ensembl.81.gtf
+grep -c "Sxl" BDGP6.Ensembl.81.gtf
+cut -f 3 BDGP6.Ensembl.81.gtf | sort | uniq
+cut -f 3 BDGP6.Ensembl.81.gtf | sort | uniq -c
